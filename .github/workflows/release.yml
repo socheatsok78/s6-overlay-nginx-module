@@ -19,8 +19,11 @@ jobs:
         run: |
           make
 
+      - run: |
+          cd output ; for f in *.tar* ; do sha256sum "$f" > "$f".sha256 ; done
+
       - name: Upload module
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            output/s6-overlay-nginx-module.tar.zx
+            output/s6-overlay-*

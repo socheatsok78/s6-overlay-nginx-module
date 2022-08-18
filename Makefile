@@ -10,6 +10,4 @@ s6-overlay-nginx-module: $(OUTPUT)/s6-overlay-nginx-module.tar.zx
 
 $(OUTPUT)/s6-overlay-nginx-module.tar.zx:
 	exec mkdir -p $(OUTPUT)
-	exec rm -rf $@.tmp
-	cd rootfs && tar -Jcvf $@.tmp --owner=0 --group=0 --numeric-owner .
-	exec mv -f $@.tmp $@
+	cd rootfs && tar -Jcvf $@ --owner=0 --group=0 --numeric-owner .
