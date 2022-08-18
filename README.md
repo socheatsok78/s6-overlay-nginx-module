@@ -1,5 +1,7 @@
-# s6-overlay-nginx-module
+# s6-overlay-nginx-module [![release](https://github.com/socheatsok78/s6-overlay-nginx-module/actions/workflows/release.yml/badge.svg)](https://github.com/socheatsok78/s6-overlay-nginx-module/actions/workflows/release.yml)
 nginx module for s6 overlay v3
+
+
 
 ## Quickstart
 
