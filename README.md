@@ -60,3 +60,11 @@ Connection: keep-alive
 ETag: "62d6cc67-267"
 Accept-Ranges: bytes
 ```
+
+## Notice
+
+This module is heavily inspired by the [just-containers/s6-overlay](https://github.com/just-containers/s6-overlay) design.
+
+## License
+
+Licensed under [Apache-2.0 license](LICENSE)
