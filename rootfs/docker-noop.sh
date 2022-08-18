@@ -1,7 +1,6 @@
 #!/bin/sh
 
 function gracefull_shutdown() {
-    # exec /run/s6/basedir/bin/halt
     exec nginx -s quit
 }
 
