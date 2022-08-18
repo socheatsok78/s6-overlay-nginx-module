@@ -6,8 +6,7 @@ concurrency:
 
 on:
   release:
-    types:
-      - "published"
+    types: [published]
 
 jobs:
   build:
@@ -20,7 +19,7 @@ jobs:
         run: |
           make
 
-      - name: Release
+      - name: Upload module
         uses: softprops/action-gh-release@v1
         with:
           files: |
