@@ -23,6 +23,8 @@ ADD https://github.com/socheatsok78/s6-overlay-nginx-module/releases/download/v$
 RUN tar -C / -Jxpf /tmp/s6-overlay-nginx-module.tar.zx && \
     rm -rf /tmp/*.tar.xz
 
+STOPSIGNAL SIGTERM
+
 ENTRYPOINT ["/init"]
 CMD [ "/docker-noop.sh" ]
 ```

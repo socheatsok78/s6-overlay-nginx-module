@@ -17,5 +17,7 @@ RUN cd /tmp && sha256sum -c *.sha256 && \
 
 ADD output/s6-overlay-nginx-module.tar.zx /
 
+STOPSIGNAL SIGTERM
+
 ENTRYPOINT ["/init"]
 CMD [ "/docker-noop.sh" ]
