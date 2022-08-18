@@ -1,0 +1,7 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    ports:
+      - 8088:80

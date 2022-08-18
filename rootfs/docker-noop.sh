@@ -5,7 +5,7 @@ function gracefull_shutdown() {
 }
 
 # trap SIGINT
-trap 'gracefull_shutdown' SIGTERM SIGINT
+trap 'gracefull_shutdown' SIGINT
 
 # noop
 while true; do sleep 5; done;
