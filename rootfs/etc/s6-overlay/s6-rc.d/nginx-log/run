@@ -1,2 +1,2 @@
 #!/bin/sh
-exec logutil-service /run/nginx/log
+exec logutil-service /var/log/nginx/persistent

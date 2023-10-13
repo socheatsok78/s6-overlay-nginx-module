@@ -71,8 +71,8 @@ You might want to redirect `nginx` loggings to `/dev/stdout` for `logutil-servic
 # By default nginx container already symlinked the log files to /dev/stdout
 # So you can just add the following lines to your nginx.conf or server block.
 
-access_log  /var/log/nginx/access.log  main;
-error_log   /var/log/nginx/error.log   warn;
+access_log  /var/log/nginx/persistent/access.log  main;
+error_log   /var/log/nginx/persistent/error.log   warn;
 ```
 
 Or alternatively, you can redirect them to `/dev/stdout` directly.
