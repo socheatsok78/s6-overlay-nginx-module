@@ -1,2 +1,2 @@
 #!/command/execlineb -P
-nginx -g "daemon off;"
+nginx -g "daemon off;error_log /dev/stdout info;"
