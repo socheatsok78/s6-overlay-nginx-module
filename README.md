@@ -63,6 +63,25 @@ ETag: "62d6cc67-267"
 Accept-Ranges: bytes
 ```
 
+## Loggings
+
+You might want to redirect `nginx` loggings to `/dev/stdout` for `logutil-service` to capture them.
+
+```sh
+# By default nginx container already symlinked the log files to /dev/stdout
+# So you can just add the following lines to your nginx.conf or server block.
+
+access_log  /var/log/nginx/access.log  main;
+error_log   /var/log/nginx/error.log   warn;
+```
+
+Or alternatively, you can redirect them to `/dev/stdout` directly.
+
+```sh
+access_log  /dev/stdout  main;
+error_log   /dev/stdout  warn;
+```
+
 ## Notice
 
 This module is heavily inspired by the [just-containers/s6-overlay](https://github.com/just-containers/s6-overlay) design.
