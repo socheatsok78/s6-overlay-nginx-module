@@ -19,3 +19,5 @@ CMD [ "sleep", "infinity" ]
 
 # https://github.com/socheatsok78/s6-overlay-nginx-module
 ADD rootfs /
+
+VOLUME [ "/run/nginx/log" ]

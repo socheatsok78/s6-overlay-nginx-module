@@ -19,3 +19,5 @@ ADD https://github.com/socheatsok78/s6-overlay-nginx-module/releases/download/v$
 RUN cd /tmp && sha256sum -c *.sha256 && \
     tar -C / -Jxpf /tmp/s6-overlay-nginx-module.tar.zx && \
     rm -rf /tmp/*.tar*
+
+VOLUME [ "/run/nginx/log" ]
